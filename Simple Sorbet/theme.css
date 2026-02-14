@@ -246,43 +246,6 @@ GRADIENT - Workspace Header Area
 }
 
 /* ========================================
-ACTIVE FILE TITLE - Remove White Squares
-======================================== */
-
-/* Remove padding from parent container */
-.nav-file.is-active,
-.nav-folder.is-active {
-  padding-left: 0 ;
-  padding-right: 0 ;
-  margin-left: calc(var(--nav-indent) * -1) ;
-}
-
-/* Active file title - full width background */
-.nav-file-title.is-active,
-.nav-folder-title.is-active {
-  background-color: rgba(38, 195, 166, 0.15) ;
-  color: var(--sorbet-teal) ;
-  font-weight: 600 ;
-  padding-left: calc(var(--nav-indent) + 8px) ;
-  margin-left: 0 ;
-  width: 100% ;
-  box-sizing: border-box ;
-  border-radius: 0 ;
-}
-
-.theme-dark .nav-file-title.is-active,
-.theme-dark .nav-folder-title.is-active {
-  background-color: rgba(30, 154, 133, 0.2) ;
-  color: var(--sorbet-teal-dark) ;
-}
-
-/* Remove any background from parent that might show through */
-.nav-file.is-active > .nav-file-title,
-.nav-folder.is-active > .nav-folder-title {
-  background-color: transparent ;
-}
-
-/* ========================================
 ACTIVE NAV ITEMS - Left Border
 ======================================== */
 
@@ -290,7 +253,7 @@ ACTIVE NAV ITEMS - Left Border
 .nav-file-title.is-active,
 .nav-folder-title.is-active {
   border-left: 3px solid var(--sorbet-teal);
-  background-color: rgba(38, 195, 166, 0.1);
+  background-color: rgba(38, 195, 166, 0.226);
   color: var(--sorbet-teal);
   font-weight: 600;
   padding-left: calc(var(--nav-indent) - 3px);
@@ -309,24 +272,24 @@ KANBAN CARDS - Left Border Accent
 
 /* Kanban Item Cards */
 .kanban-plugin__item {
-  border-left: 3px solid var(--california-teal) ;
+  border-left: 3px solid var(--sorbet-teal) ;
   border-radius: var(--radius-s) ;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) ;
 }
 
 .theme-dark .kanban-plugin__item {
-  border-left: 3px solid var(--california-teal-dark) ;
+  border-left: 3px solid var(--sorbet-teal-dark) ;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) ;
 }
 
 /* Kanban Lane Headers */
 .kanban-plugin__lane-header-wrapper {
-  border-left: 3px solid var(--california-teal) ;
+  border-left: 3px solid var(--sorbet-teal) ;
   background-color: rgba(38, 195, 166, 0.05) ;
 }
 
 .theme-dark .kanban-plugin__lane-header-wrapper {
-  border-left: 3px solid var(--california-teal-dark) ;
+  border-left: 3px solid var(--sorbet-teal-dark) ;
   background-color: rgba(30, 154, 133, 0.1) ;
 }
 
@@ -478,15 +441,6 @@ ADDITIONAL STYLING - Clean & Polished
   color: var(--sorbet-teal-dark);
 }
 
-/* Tab Hover */
-.workspace-tab-header:hover {
-  background-color: rgba(0, 0, 0, 0.03);
-}
-
-.theme-dark .workspace-tab-header:hover {
-  background-color: rgba(255, 255, 255, 0.03);
-}
-
 /* Sidebar - No Yellow! */
 .theme-light .workspace-leaf-content[data-type="file-explorer"] {
   background-color: var(--background-secondary);
@@ -494,19 +448,6 @@ ADDITIONAL STYLING - Clean & Polished
 
 .theme-dark .workspace-leaf-content[data-type="file-explorer"] {
   background-color: var(--background-secondary);
-}
-
-/* Active File Title */
-.theme-light .nav-file-title.is-active {
-  background-color: rgba(38, 195, 166, 0.329);
-  color: var(--sorbet-teal);
-  font-weight: 600;
-}
-
-.theme-dark .nav-file-title.is-active {
-  background-color: rgba(30, 154, 133, 0.2);
-  color: var(--sorbet-teal-dark);
-  font-weight: 600;
 }
 
 /* Sidebar Hover */
@@ -563,15 +504,15 @@ ADDITIONAL STYLING - Clean & Polished
 }
 
 /* Right Sidebar (Custom Theme Studio Plugin) */
-.theme-light .mod-right-split .workspace-leaf-content {
+.theme-light .workspace-leaf-content {
   background-color: var(--background-secondary);
 }
 
-.theme-dark .mod-right-split .workspace-leaf-content {
+.theme-dark .workspace-leaf-content {
   background-color: var(--background-secondary);
 }
 
-.theme-dark .mod-right-split .workspace-leaf-content {
+.theme-dark .workspace-leaf-content {
   color: var(--sorbet-mint-dark)
 }
 
@@ -730,42 +671,6 @@ button:hover,
 .theme-dark .copy-code-button:hover {
   background-color: var(--sorbet-pink-dark);
 }
-
-/* ========================================
-RIBBON ICONS - Coral Hover
-======================================== */
-
-/* Ribbon Icons Hover */
-.workspace-ribbon .clickable-icon:hover,
-.workspace-ribbon .workspace-ribbon-collapse-btn:hover,
-.workspace-ribbon .workspace-ribbon-pin-btn:hover,
-.workspace-ribbon .nav-action-button:hover {
-  color: var(--sorbet-coral);
-
-}
-
-/* Dark Mode Ribbon Icons Hover */
-.theme-dark .workspace-ribbon .clickable-icon:hover,
-.theme-dark .workspace-ribbon .workspace-ribbon-collapse-btn:hover,
-.theme-dark .workspace-ribbon .workspace-ribbon-pin-btn:hover,
-.theme-dark .workspace-ribbon .nav-action-button:hover {
-  color: var(--sorbet-teal-dark);
-}
-
-/* Active Ribbon Icons */
-.workspace-ribbon .clickable-icon.is-active,
-.workspace-ribbon .workspace-ribbon-collapse-btn.is-active,
-.workspace-ribbon .workspace-ribbon-pin-btn.is-active {
-  color: var(--sorbet-coral);
-}
-
-.theme-dark .workspace-ribbon .clickable-icon.is-active,
-.theme-dark .workspace-ribbon .workspace-ribbon-collapse-btn.is-active,
-.theme-dark .workspace-ribbon .workspace-ribbon-pin-btn.is-active {
-  color: var(--sorbet-teal-dark) ;
-}
-
-
 
 /* ========================================
 BUTTONS - Match Side Panel Active Tab Style
@@ -967,12 +872,12 @@ TOGGLES - Keep default appearance
 
 /* Toggle switches - preserve Obsidian's default styling */
 .checkbox-container:not(.task-list-item .checkbox-container) {
-  background: var(--background-modifier-form-field) ;
+  background: var(--background-secondary-alt) ;
   border-color: var(--background-modifier-border) ;
 }
 
 .checkbox-container:not(.task-list-item .checkbox-container):hover {
-  background: var(--background-modifier-form-field-highlighted) ;
+  background: var(--background-primary-alt) ;
   transform: none ;
   box-shadow: none ;
 }
@@ -998,8 +903,6 @@ INPUT FIELDS - Subtle Matching Style
 /* Input Fields */
 input[type="text"],
 input[type="search"],
-input[type="email"],
-input[type="password"],
 textarea {
   background-color: var(--background-secondary) ;
   border: 1px solid var(--background-modifier-border) ;
@@ -1012,8 +915,6 @@ textarea {
 
 input[type="text"]:focus,
 input[type="search"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
 textarea:focus {
   border-color: var(--sorbet-teal) ;
   box-shadow: 0 0 0 2px rgba(38, 195, 166, 0.2) ;
@@ -1021,8 +922,6 @@ textarea:focus {
 
 .theme-dark input[type="text"]:focus,
 .theme-dark input[type="search"]:focus,
-.theme-dark input[type="email"]:focus,
-.theme-dark input[type="password"]:focus,
 .theme-dark textarea:focus {
   border-color: var(--sorbet-teal-dark) ;
   box-shadow: 0 0 0 2px rgba(30, 154, 133, 0.3) ;
@@ -1066,8 +965,7 @@ SIDEBAR ICONS - Default Color
 ======================================== */
 
 /* All clickable icons in sidebar (default color) */
-.mod-left-split .workspace-tab-header .clickable-icon,
-.mod-right-split .workspace-tab-header .clickable-icon {
+.workspace-tab-header .clickable-icon {
   color: var(--sorbet-coral) !important;
   transition: color 0.2s ease !important;
 }
@@ -1079,8 +977,7 @@ SIDEBAR ICONS - Default Color
 }
 
 /* Collapse icon (default) */
-.mod-left-split .workspace-tab-header .workspace-ribbon-collapse-btn,
-.mod-right-split .workspace-tab-header .workspace-ribbon-collapse-btn {
+.workspace-tab-header .workspace-collapse-btn {
   color: var(--sorbet-pink) !important;
 }
 
@@ -1107,13 +1004,13 @@ button.mod-cta {
 
 /* Ribbon Icons Hover */
 .workspace-ribbon .clickable-icon:hover {
-  background-color: var(--sorbet-mint);
-  color: var(--sorbet-peach)
+  background-color: var(--sorbet-peach);
+  color: var(--sorbet-mint-dark);
 }
 
 /* change color of ribbon icons */
-.workspace-ribbon.side-dock-ribbon.mod-left .clickable-icon {
-  color: var(--sorbet-pink)
+.workspace-ribbon .clickable-icon {
+  color: var(--sorbet-pink);
 }
 
 /* ========================================
