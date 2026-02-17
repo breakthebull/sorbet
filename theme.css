@@ -126,7 +126,7 @@ WORKSPACE TAB HEADER - Waffle Cone
 ======================================== */
 
 /* Area below title bar & split panel tab bars */
-.workspace-tab-header-container {
+.theme-light .workspace-tab-header-container {
   background-color: var(--sorbet-peach) !important; /* Light waffle cone */
 }
 
@@ -221,10 +221,6 @@ DARK MODE - sorbet Night
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 12px;
-}
-
-theme-dark.workspace-tab-header-container {
-  color: var(--background-primary);
 }
 
 /* ========================================
@@ -505,15 +501,13 @@ ADDITIONAL STYLING - Clean & Polished
 
 /* Right Sidebar (Custom Theme Studio Plugin) */
 .theme-light .workspace-leaf-content {
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary-alt);
 }
 
 .theme-dark .workspace-leaf-content {
-  background-color: var(--background-secondary);
-}
+  background-color: var(--background-primary);
+  color: var(--sorbet-mint-dark);
 
-.theme-dark .workspace-leaf-content {
-  color: var(--sorbet-mint-dark)
 }
 
 /* Search Results */
